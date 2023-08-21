@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", "sans-serif";
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 60px;
+  max-width: 1201px;
+  margin: 0 auto;
+  position: relative;
+}
+
+button {
+  padding: 20px 35px 20px 35px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #2499a8;
+  color: white;
+  border: none;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 60px;
+  color: #105c66;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0px;
+}
+
+nav {
+  height: 60px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+nav .nav-flex-container {
+  max-width: 1201px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+nav .nav-flex-container .nav-menu {
+  display: flex;
+  flex-direction: row;
+}
+nav .nav-flex-container .nav-menu .nav-item {
+  margin-right: 32px;
+}
+
+main {
+  background-color: white;
+  width: 100vw;
+  position: relative;
+}
+
+.hero-section {
+  color: white;
+  text-align: center;
+  background-image: url("assets/dgg-hero-without-bubbles.png");
+  min-height: 600px;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.hero-section .hero-cta {
+  vertical-align: middle;
+  margin: 0 auto;
+  max-width: 650px;
+}
+.hero-section h1 {
+  margin-top: 32px 0px 0px;
+}
+.hero-section p {
+  line-height: 30px;
+}
+.hero-section button {
+  margin-top: 48px;
+}
+
+.image-cta-section {
+  display: flex;
+  gap: 60px;
+}
+.image-cta-section div {
+  flex-basis: 50%;
+}
+.image-cta-section .image-container {
+  text-align: center;
+}
+.image-cta-section .image-container img {
+  width: 100%;
+  height: auto;
+}
+.image-cta-section .image-cta-content {
+  display: flex;
+  flex-direction: column;
+}
+.image-cta-section .image-cta-button {
+  margin-top: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.promotion-banner-section {
+  display: flex;
+  background-color: #f1feff;
+  position: relative;
+}
+.promotion-banner-section .promotion-banner-content {
+  max-width: 580px;
+}
+.promotion-banner-section .promotion-banner-content p {
+  max-width: 400px;
+  color: #105c66;
+}
+.promotion-banner-section .promotion-banner-image-container {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  margin-top: -20px;
+}
+.promotion-banner-section .promotion-banner-image-container img {
+  height: 100%;
+}
+
+.product-grid-section {
+  margin-top: 60px;
+  text-align: center;
+}
+.product-grid-section .product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.product-grid-section .product-grid img {
+  width: 100%;
+}
+.product-grid-section .centered-button {
+  margin-top: 48px;
+}
+
+.testimonial-grid-section {
+  text-align: center;
+}
+.testimonial-grid-section .testimonial-grid {
+  margin: 48px 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+.testimonial-grid-section .testimonial-grid img {
+  width: 100%;
+}
+.testimonial-grid-section .testimonial {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.testimonial-grid-section .testimonial-author {
+  margin-top: 24px;
+}
+.testimonial-grid-section .centered-button {
+  margin-top: 48px;
+}
+
+.footer {
+  background-color: #f1feff;
+  background-image: url("assets/paw.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr;
+  row-gap: 3em;
+  padding: 80px;
+  color: #105c66;
+}
+.footer .footer-info h4 {
+  margin-top: 0px;
+}
+.footer .footer-links p {
+  font-weight: 600;
+}
+
+.bubbles [class*=bubble] {
+  border-radius: 300px;
+  background: white;
+  position: absolute;
+}
+.bubbles .bubble1 {
+  width: 18vw;
+  height: 18vw;
+  left: -3vw;
+  top: -6vw;
+}
+.bubbles .bubble2 {
+  width: 15vw;
+  height: 15vw;
+  left: 12vw;
+  top: -8vw;
+}
+.bubbles .bubble3 {
+  width: 22vw;
+  height: 22vw;
+  left: 21vw;
+  top: -12vw;
+}
+.bubbles .bubble4 {
+  width: 16vw;
+  height: 16vw;
+  left: 40vw;
+  top: -8vw;
+}
+.bubbles .bubble5 {
+  width: 19vw;
+  height: 19vw;
+  left: 49vw;
+  top: -9vw;
+}
+.bubbles .bubble6 {
+  width: 27vw;
+  height: 27vw;
+  left: 75vw;
+  top: -13vw;
+}
+.bubbles .bubble7 {
+  width: 11vw;
+  height: 11vw;
+  left: 66vw;
+  top: -6vw;
+}/*# sourceMappingURL=styles.css.map */

@@ -5,77 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Gone Grooming</title>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'poppins', 'sans-serif';
-        }
-
-        section {
-            padding: 80px 60px;
-        }
-
-        button {
-            padding: 20px 35px 20px 35px;
-            border-radius: 50px;
-            font-size: 16px;
-            font-family: 'poppins', sans-serif;
-            font-weight: 700;
-            text-transform: uppercase;
-            background-color:#2499A8;
-            color: white;
-            border: none;
-        }
-
-        h1 {
-            font-size: 60px;
-            color: white;
-        }
-
-        h2 {
-            font-size: 50px;
-            line-height: 60px;
-            color: #105C66;
-            margin-top: 0px;
-            margin-bottom: 30px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 24px;
-            margin-top: 0px;
-        }
-        .image-cta-section {
-            display:flex;
-            gap: 60px;
-        }
-        .image-cta-section div {
-            flex-basis: 50%;
-        }
-
-        .image-cta-section .image-container {
-            text-align: center;
-        }
-        
-        .image-cta-section .image-container img {
-            width: 100%;
-            height: auto;
-        }
-
-        .image-cta-section .image-cta-content {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .image-cta-section .image-cta-button {
-            margin-top: auto;
-            width: fit-content;
-            
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"></head>
@@ -83,18 +13,30 @@
     <nav>
         <div class="nav-flex-container">
             <div class="logo"></div>
-            <div class="nav-items">About Us</div>
-            <div class="nav-items">Services & Pricing</div>
-            <div class="nav-items">Policies</div>
-            <div class="nav-items">Products</div>
+            <div class="nav-menu">
+            <div class="nav-item">About Us</div>
+            <div class="nav-item">Services & Pricing</div>
+            <div class="nav-item">Policies</div>
+            <div class="nav-item">Products</div>
+        </div>
         </div>
     </nav>
-    <div class="hero">
+    <div class="hero-section">
         <div class="hero-cta">
-            <h1></h1>
-            <p></p>
+            <h1>Where quality and comfort come first</h1>
+            <p>Treat your fur baby to a one-on-one grooming appointment in a positive, loving, and fear-free environment.</p>
             <button>Book Appointment</button>
         </div>
+    </div>
+    <main>
+    <div class="bubbles">
+        <div class="bubble1"></div>
+        <div class="bubble2"></div>
+        <div class="bubble3"></div>
+        <div class="bubble4"></div>
+        <div class="bubble5"></div>
+        <div class="bubble6"></div>
+        <div class="bubble7"></div>
     </div>
     <section class="image-cta-section">
         <div class="image-container"><img src="./assets/One-on-one.png" alt="One on one time between groomer and fur baby"></div>
@@ -105,28 +47,64 @@
         </div>
     </section>
     <section class="promotion-banner-section">
-        <div>
+        <div class="promotion-banner-content">
             <h2>Take advantage of our new client special!</h2>
             <p>Get <strong>20% off</strong> your first Bath or Full Grooming service!</p>
         </div>
-        <div><img src="" alt=""></div>
+        <div class="promotion-banner-image-container"><img src="assets/doggie-with-bubble-foam-on-head.png" alt="Doggie with foam on head"></div>
     </section>
     <section class="product-grid-section">
         <h2>Products</h2>
         <p>We invest in high-quality, eco-friendly, fragrance-free, cruelty-free and paraben-free products for naturally pleasant-smelling coats!</p>
-        <div class="product-grid"></div>
-        <button>All products</button>
+        <div class="product-grid">
+            <div><img src="assets/products/1.png" alt="shampoo"></div>
+            <div><img src="assets/products/2.png" alt="spray"></div>
+            <div><img src="assets/products/3.png" alt="spray"></div>
+            <div><img src="assets/products/4.png" alt="spray"></div>
+        </div>
+        <div class="centered-button"><button>All products</button></div>
     </section>
     <section class="testimonial-grid-section">
         <h2>Pups love us!</h2>
         <p>We take pride in creating a happy experience for every pup we serve in the San Diego County area.</p>
         <div class="testimonial-grid">
+            <div><img src="assets/testimonials/1.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/2.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/3.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/4.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/5.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/6.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/7.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/8.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/9.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/10.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/11.png" alt="happy dog"></div>
+            <div><img src="assets/testimonials/12.png" alt="happy dog"></div>
+
+
         </div>
         <h2>Their hoomans do too!</h2>
         <p class="testimonial">Doggie Gone Grooming is the best. I wouldn't trust any other groomer to take care of my best friend. They know exactly how to make her feel comfortable and looking / feeling her best.</p>
         <p class="testimonial-author">Abby B.</p>
 
     </section>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer-info">
+            <h4>Doggie Gone Grooming</h4>
+            <p>P: (619) 253-8958</p>
+            <p>E: doggiegonegrooming@gmail.com</p>
+        </div>
+        <div class="footer-links">
+            <p>About Us</p>
+            <p>Services & Pricing</p>
+            <p>Policies</p>
+            <p>Products</p>
+            <p>Contacts</p>
+        </div>
+        <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.8254344156057!2d-117.11622162361346!3d32.584179273744766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94d8675bf023b%3A0x28d895baec36061b!2sDoggie%20Gone%20Grooming!5e0!3m2!1sen!2sus!4v1692602343391!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</main>
 </body>
 </html>
