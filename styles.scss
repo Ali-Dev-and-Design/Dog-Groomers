@@ -14,10 +14,14 @@ body {
 }
 
 section {
-  padding: 80px 60px;
+  padding: 40px 30px;
+
+  @media screen and (min-width: $desktop) {
+    padding: 80px 60px;
+  }
   max-width: $desktop;
   margin: 0 auto;
-  position:relative;
+  position: relative;
 }
 
 button {
@@ -29,21 +33,40 @@ button {
   text-transform: uppercase;
   background-color: $primary;
   color: white;
-  border: none;
+  border: 2px solid $primary;
+  transition: .1s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f1feff;
+    color: $primary;
+    border: 2px solid $primary;
+
+  }
 }
 
 h1 {
-  font-size: 60px;
   color: white;
-  line-height: 72px;
+  font-size: 50px;
+  line-height: 60px;
+  @media screen and (min-width: $desktop) {
+    font-size: 56px;
+    line-height: 66px;
+  }
 }
 
 h2 {
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 42px;
+  line-height: 48px;
   color: $primary-dark;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 24px;
+  }
 }
 
 p {
@@ -57,8 +80,7 @@ nav {
   color: white;
   position: fixed;
   width: 100%;
-  z-index:10;
-  
+  z-index: 10;
 
   .nav-flex-container {
     max-width: $desktop;
@@ -80,10 +102,9 @@ nav {
 }
 
 main {
-    background-color:white;
-    width: 100vw;
-    position: relative;
-
+  background-color: white;
+  width: 100vw;
+  position: relative;
 }
 
 .hero-section {
@@ -96,8 +117,8 @@ main {
   background-size: cover;
   display: flex;
   align-items: center;
-    position: sticky;
-    top:0;
+  position: sticky;
+  top: 0;
 
   .hero-cta {
     vertical-align: middle;
@@ -115,19 +136,39 @@ main {
 
   button {
     margin-top: 48px;
+    &:hover {
+      background-color: white;
+      border: 2px solid white;
+    }
   }
 }
 
 .image-cta-section {
   display: flex;
-  gap: 60px;
+  gap: 30px;
+  flex-direction: column;
+  padding-top: 100px;
 
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $laptop) {
+    flex-direction: row;
+    gap: 45px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 60px;
+  }
   div {
     flex-basis: 50%;
   }
 
   .image-container {
     text-align: center;
+    display: flex;
+    align-items: center;
   }
 
   .image-container img {
@@ -165,9 +206,17 @@ main {
     right: 0;
     height: 100%;
     margin-top: -20px;
-
     img {
-      height: 100%;
+      width: 50%;
+      height: auto;
+      right: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      img {
+        height: 100%;
+        width: auto;
+      }
     }
   }
 }
@@ -177,7 +226,15 @@ main {
   text-align: center;
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-columns: repeat(1, 1fr);
+
+    @media screen and (min-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: $laptop) {
+      grid-template-columns: repeat(4, 1fr);
+    }
     gap: 12px;
     img {
       width: 100%;
@@ -195,7 +252,15 @@ main {
   .testimonial-grid {
     margin: 48px 0;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (min-width: $tablet) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (min-width: $laptop) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
     gap: 12px;
     img {
       width: 100%;
@@ -217,33 +282,33 @@ main {
 }
 
 .footer {
-    background-color: $primary-light;
-    background-image: url('assets/paw.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 3fr 3fr 2fr;
-    row-gap: 3em;
-    padding: 80px;
-    color: $primary-dark;
-    .footer-info{
-        h4 {
-            margin-top: 0px;
-        }
+  background-color: $primary-light;
+  background-image: url("assets/paw.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr;
+  row-gap: 3em;
+  padding: 80px;
+  color: $primary-dark;
+  .footer-info {
+    h4 {
+      margin-top: 0px;
     }
-    .footer-links {
-        p {
-            font-weight: 600;
-        }
+  }
+  .footer-links {
+    p {
+      font-weight: 600;
     }
+  }
 }
 
 .bubbles {
-    [class*='bubble'] {
-        border-radius: 300px;
-        background: white;
+  [class*="bubble"] {
+    border-radius: 300px;
+    background: white;
     position: absolute;
-    }
+  }
 
   .bubble1 {
     width: 18vw;
@@ -294,3 +359,11 @@ main {
     top: -6vw;
   }
 }
+
+//services page
+
+dl { width: 400px }
+dt { float: left; width: 300px; overflow: hidden; white-space: nowrap }
+dd { float: left; width: 100px; overflow: hidden }
+
+dt:after { content: " .................................................................................." }

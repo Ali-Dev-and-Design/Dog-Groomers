@@ -6,10 +6,15 @@ body {
 }
 
 section {
-  padding: 80px 60px;
+  padding: 40px 30px;
   max-width: 1201px;
   margin: 0 auto;
   position: relative;
+}
+@media screen and (min-width: 1201px) {
+  section {
+    padding: 80px 60px;
+  }
 }
 
 button {
@@ -21,21 +26,41 @@ button {
   text-transform: uppercase;
   background-color: #2499a8;
   color: white;
-  border: none;
+  border: 2px solid #2499a8;
+  transition: 0.1s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f1feff;
+  color: #2499a8;
+  border: 2px solid #2499a8;
 }
 
 h1 {
-  font-size: 60px;
   color: white;
-  line-height: 72px;
+  font-size: 50px;
+  line-height: 60px;
+}
+@media screen and (min-width: 1201px) {
+  h1 {
+    font-size: 56px;
+    line-height: 66px;
+  }
 }
 
 h2 {
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 42px;
+  line-height: 48px;
   color: #105c66;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 1201px) {
+  h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 24px;
+  }
 }
 
 p {
@@ -100,16 +125,40 @@ main {
 .hero-section button {
   margin-top: 48px;
 }
+.hero-section button:hover {
+  background-color: white;
+  border: 2px solid white;
+}
 
 .image-cta-section {
   display: flex;
-  gap: 60px;
+  gap: 30px;
+  flex-direction: column;
+  padding-top: 100px;
+}
+@media screen and (min-width: 769px) {
+  .image-cta-section {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 769px) {
+  .image-cta-section {
+    flex-direction: row;
+    gap: 45px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .image-cta-section {
+    gap: 60px;
+  }
 }
 .image-cta-section div {
   flex-basis: 50%;
 }
 .image-cta-section .image-container {
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 .image-cta-section .image-container img {
   width: 100%;
@@ -144,7 +193,15 @@ main {
   margin-top: -20px;
 }
 .promotion-banner-section .promotion-banner-image-container img {
-  height: 100%;
+  width: 50%;
+  height: auto;
+  right: 0;
+}
+@media screen and (min-width: 1201px) {
+  .promotion-banner-section .promotion-banner-image-container img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .product-grid-section {
@@ -153,8 +210,18 @@ main {
 }
 .product-grid-section .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 12px;
+}
+@media screen and (min-width: 481px) {
+  .product-grid-section .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 769px) {
+  .product-grid-section .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .product-grid-section .product-grid img {
   width: 100%;
@@ -169,8 +236,18 @@ main {
 .testimonial-grid-section .testimonial-grid {
   margin: 48px 0;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
+}
+@media screen and (min-width: 481px) {
+  .testimonial-grid-section .testimonial-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 769px) {
+  .testimonial-grid-section .testimonial-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 .testimonial-grid-section .testimonial-grid img {
   width: 100%;
@@ -250,4 +327,25 @@ main {
   height: 11vw;
   left: 66vw;
   top: -6vw;
+}
+
+dl {
+  width: 400px;
+}
+
+dt {
+  float: left;
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+dd {
+  float: left;
+  width: 100px;
+  overflow: hidden;
+}
+
+dt:after {
+  content: " ..................................................................................";
 }/*# sourceMappingURL=styles.css.map */
